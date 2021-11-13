@@ -343,7 +343,7 @@ void webprint(const char* input) {
     String data = "var=" + (String)input;
 
      //change URL below to the Sub-Domain
-     client.println("POST /Home/Code2.php HTTP/1.1"); 
+     client.println("POST /php_part.php HTTP/1.1"); 
      //change URL below ito match the Domain
      client.print("Host: espbots.000webhostapp.com\n");                 
      client.println("User-Agent: ESP8266/1.0");
