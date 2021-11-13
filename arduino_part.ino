@@ -6,7 +6,7 @@ const char* ssid = "SSID";//type your ssid
 const char* password = "PASSWORD";//type your password
 
  //setup connection to webpage
-const char server[] = "https://espbots.000webhostapp.com"; 
+const char server[] = "https://[your_webserver's_domain]"; // replace this with the domain name for your webserver 
 
 WiFiClient client;
 
@@ -382,8 +382,8 @@ void webprint(char input) {
 
      //change URL below to the Sub-Domain
      client.println("POST /Home/Code2.php HTTP/1.1"); 
-     //change URL below ito match the Domain
-     client.print("Host: espbots.000webhostapp.com\n");                 
+     //change URL below to match the Domain
+     client.print("Host: [domain]\n");
      client.println("User-Agent: ESP8266/1.0");
      client.println("Connection: close"); 
      client.println("Content-Type: application/x-www-form-urlencoded");

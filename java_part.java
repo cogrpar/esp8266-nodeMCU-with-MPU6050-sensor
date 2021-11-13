@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class first {
+class java_part {
 
     public static void main(String[] args) throws MalformedURLException, IOException {
 
@@ -13,7 +13,7 @@ public class first {
 
         try {
 
-            URL url = new URL("https://example.000webhostapp.com/home/code2.php"); // example website
+            URL url = new URL("https://[your_site's_domain]"); // example website, insert the domain of your webserver here
             br = new BufferedReader(new InputStreamReader(url.openStream()));
 
             String line;
